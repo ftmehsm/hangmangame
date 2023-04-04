@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'comic Sans MS';
+    src: url(./comic-sans-ms/COMIC.TTF) ,
+    url(./comic-sans-ms/comici.ttf)
+    url(./comic-sans-ms/ComicSansMS3.ttf)
+    url(./comic-sans-ms/comicz.ttf)
+    url(./comic-sans-ms/design.graffiti.comicsansms.ttf)
+    url(./comic-sans-ms/design.graffiti.comicsansmsgras.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    margin: 0;
+}
+body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: 6em auto 300px 6rem 2rem;
+    align-content: flex-start;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Helvetica , Arial, sans-serif;
+}
+h1{
+    text-align: center;
+}
+.keys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em 0;
+    font-family: 'comic Sans MS';
+}
+.keys div{
+    border: 1px rgb(26, 82, 0) solid;
+    width: 2em;
+    height: 2em;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 7px;
+    color: green;
+    cursor: pointer;
+    overflow: hidden;
+}
+.keys div:hover{
+    background-color: rgba(131, 255, 131, 0.938);
+}
+.clue{
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 0.5em;
+    font-family: 'comic Sans MS';
+}
+
+
+/*
+this class will grey out the letters as they are used. 
+just add the class 'used'
+*/
+.keys div.used {
+    background-color: lightgrey;
+    opacity: 0.5;
+}
+.hangmanimg img{
+    text-align: center;
+}
+
+/*
+when the game is over!.
+*/
+
+.gameover p{
+    text-align: center;
+    font-size: 1rem;
+    display: none;
+}
